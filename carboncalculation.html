@@ -1,0 +1,78 @@
+<html>
+<head>
+<link rel="stylesheet" href="sustainother.css">
+<title> Sustainable Consumption </title>
+</head>
+<body>
+<ul>
+  <li><a href="Main Page - Dummy.html">Home</a></li>
+  <li style="float:right"><a href="About - SDG Dummy.html">About</a></li>
+
+  <li class="dropdown">
+    <a href="#water" class="dropbtn">Water</a>
+    <div class="dropdown-content">
+      <a href="watercalculation.html">Problem</a>
+      <a href="watersolution.html">Solution</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#electric" class="dropbtn">Electricity</a>
+    <div class="dropdown-content">
+      <a href="electriccalculation.html">Problem</a>
+      <a href="electricsolution.html">Solution</a>
+  </li>
+
+<li class="dropdown">
+    <a href="#carbon" class="dropbtn, active">Carbon Footprint</a>
+    <div class="dropdown-content">
+      <a href="carboncalculation.html">Problem</a>
+      <a href="carbonsolution.html">Solution</a>
+  </li>
+
+    </div>
+  </li>
+</ul>
+
+<div class="divcalcinfo">
+<p><u><h3>What is the problem?</h3></u></p>
+<p>Carbon emissions and greenhouse gases.</p>
+<p>The amount of carbon emissions that happen globally are astonishing, 
+it's reached to the point where it dangers our species and planet immensely. 
+We use cars everyday without knowing how much damage it causes to the environment.
+Factories are literally a carbon emission machine.
+We need to be aware of the amount of carbon footprint we imprint on the earth,
+we need to stop carbon emissions as much as possible and live sustainably.</p>
+<br>On your left there is a form, this is to see if you produce carbon emissions: 
+<br>1. Above Average
+<br>2. Average
+<br>3. Below Average
+<p> Aside from this there is a webpage that talks about the ways you can reduce your carbon footprint
+</div>
+<div class="divform">
+<form>
+  Time car is used in a day: <input type="number" class="formboxamount" id="price" /><br>
+
+  <input type="button" class="button" onClick="calculatefuelusage();" Value="Submit" />
+
+</form>
+</p>
+<p>Your fuel consumption is:</p><strong><p id="output"></p></strong>
+
+<script type="text/javascript">
+  function calculatefuelusage()
+  {
+      fuelusage = document.getElementById("price").value;
+      if (fuelusage < 4) {
+        document.getElementById("output").innerHTML = ("Below Average")
+      }
+      else if (fuelusage > 4){
+        document.getElementById("output").innerHTML = ("Above Average")
+      }
+      else {
+        document.getElementById("output").innerHTML = ("Average")
+      }
+  } 
+</script>
+</div>
+</body>
+</html>

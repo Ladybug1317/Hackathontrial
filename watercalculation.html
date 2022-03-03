@@ -1,0 +1,95 @@
+<html>
+<head>
+<link rel="stylesheet" href="sustainother.css">
+<title> Sustainable Consumption </title>
+</head>
+<body>
+<ul>
+  <li><a href="Main Page - Dummy.html">Home</a></li>
+  <li style="float:right"><a href="About - SDG Dummy.html">About</a></li>
+
+  <li class="dropdown">
+    <a href="#water" class="dropbtn, active">Water</a>
+    <div class="dropdown-content">
+      <a href="watercalculation.html">Problem</a>
+      <a href="watersolution.html">Solution</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#electric" class="dropbtn">Electricity</a>
+    <div class="dropdown-content">
+      <a href="electriccalculation.html">Problem</a>
+      <a href="electricsolution.html">Solution</a>
+  </li>
+
+<li class="dropdown">
+    <a href="#carbon" class="dropbtn">Carbon Footprint</a>
+    <div class="dropdown-content">
+      <a href="carboncalculation.html">Problem</a>
+      <a href="carbonsolution.html">Solution</a>
+  </li>
+
+    </div>
+  </li>
+</ul>
+
+<div class="divcalcinfo">
+<p><u><h3>What is the problem?</h3></u></p>
+<p>Water consumption, specifically excess water consumption.</p>
+<p>Water is an extremely precious resource, 
+we are very lucky that we have access to water. 
+Many around the world don't have the luxury to have 24/7 access to drinking water, 
+the amount of freshwater in the world is reducing and we need to stop wasting water, 
+but instead use it wisely.</p>
+<br>On your right is a form, this is to see if you use water: 
+<br>1. Above Average
+<br>2. Average
+<br>3. Below Average
+<p> Aside from this there is a webpage that talks about the ways you can consume water sustainably linked above
+</div>
+
+<div class="divform">
+<form>
+  Price of Water bill (per month):<br>
+  <input type="number" class="formboxprice" id="price" /><br></br>
+  Amount of Water in Water Bill (per month, per person): <input type="number" class="formboxamount" id="amount" /><br>
+ 
+  <input type="button" class="button" onClick="calculatepricewater(); calculateamountwater();" Value="Submit" />
+
+</form>
+</p>
+<p>Your water consumption price is:</p><strong><p id="output"></p></strong>
+<p>Your water consumption amount is:</p><strong><p id="output2"></p></strong>
+
+<script type="text/javascript">
+  function calculatepricewater()
+  {
+      pricewater = document.getElementById("price").value;
+      if (pricewater < 2000) {
+        document.getElementById("output").innerHTML = ("Below Average")
+      }
+      else if (pricewater > 3001){
+        document.getElementById("output").innerHTML = ("Above Average")
+      }
+      else {
+        document.getElementById("output").innerHTML = ("Average")
+      }
+  } 
+
+  function calculateamountwater()
+  {
+    amountwater = document.getElementById("amount").value;
+    if (amountwater < 11000) {
+        document.getElementById("output2").innerHTML = ("Below Average");
+      }
+    else if (amountwater > 12001){
+        document.getElementById("output2").innerHTML = ("Above Average");
+      }
+    else{
+      document.getElementById("output2").innerHTML = ("Average")
+    }
+  }
+</script>
+</div>
+</body>
+</html>

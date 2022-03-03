@@ -1,0 +1,71 @@
+body {
+  background-image: url("Hackathon Background.jpg");
+  background-size: cover;
+}
+
+.divintro {
+ width: 290px;
+ height: 550px;
+ padding: 10px;
+ margin-top: 50px;
+ margin-right: 700px;
+ margin-left: 5px;
+ background-color: AFEEEE;
+ text-align: left;
+ font-family:'Thunderman';
+ font-size: 18px
+}
+ 
+ul {
+  list-style-type: none;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #AFEEEE;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  font-family:'Thunderman';
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #F5FFFA;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F5FFFA;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #F1F1F1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #789
